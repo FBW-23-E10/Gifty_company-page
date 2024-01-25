@@ -72,7 +72,7 @@ h1{
 }
 
 .destination-bar{
-    background: url(/Images/jet1.jpg) no-repeat;
+    background: url(../Images/jet1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
