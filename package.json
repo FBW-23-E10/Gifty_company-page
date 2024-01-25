@@ -1,0 +1,18 @@
+{
+  "name": "gifty_company-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"npm run compile-sass & live server",
+    "compile-sass": "sass --watch src/styles/main.scss src/styles/style.css"
+    
+  },
+  "keywords": [],
+  "author": "Gifty",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.70.0"
+  }
+}

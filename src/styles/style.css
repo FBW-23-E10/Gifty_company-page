@@ -1,0 +1,381 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+/* Styling the header */
+
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background: #274c77;
+    text-align: center;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    color: #e7ecef;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+
+
+.nav a{
+    position: relative;
+    font-size: 18px;
+    color: #e7ecef;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left:40px;
+}
+
+.nav a::before{
+  content: '';
+  position: absolute;
+  top:100%;
+  left:0;
+  width:0;
+  height: 2px;
+  background: #e7ecef;
+  transition: .3s;
+}
+
+.nav a:hover::before {
+ width:100%
+
+}
+
+/* Styling the banner */
+
+h1{
+    padding:  0px 0px 5px 0px;
+    font-size: 30px;
+    color:#274c77;
+    font-weight: 50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.destination-bar{
+    background: url(/Images/jet1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    max-width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+  
+   
+}
+.frame{
+    margin-top: 15%;
+    max-width: 100%;
+    height: 50%;
+    background:#e7ecef8f;
+    backdrop-filter: blur(2px);
+    position: relative;
+    border-radius: 60px;
+    max-width: 35%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 0 5px 0  #404142;
+}
+
+button{
+    width: 30%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: #274c77;
+    color: #e7ecef;
+    font-size: 10px;
+    font-weight: 50;
+    margin-left: 10px;
+    cursor: pointer;
+  
+}
+ 
+button:hover{
+    background: #6096ba;
+    color: #274c77;
+    transition: .3s;
+    box-shadow: 0 0 5px 0 #e7ecef;
+    }
+    
+input{
+    width: 60%;
+    margin-top: 5px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 10px;
+    color: #333;
+    font-weight: 50;
+    box-shadow: 0 0 5px 0  #696c6e;
+   
+}
+
+/* Styling the first section */
+
+
+.welcome {
+    
+ background-color:#6096ba ;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+    color:#e7ecef;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome h2{
+    font-size: 30px;
+    font-weight: 50;
+    text-align: center;
+    
+}
+
+p{
+    background:#e7ecef ;
+    padding:  50px;
+    color: #8b8c89;
+    font-size: 20px;
+    font-weight: 50;
+    text-align: center;
+   
+}
+
+/* Styling the second section(applied on the 3rd and fourth*/
+
+img{
+    width: 80%;
+    object-fit: cover;
+    height: 300px;
+    box-shadow: 0 0 10px 0  #274c77;
+  
+}
+
+
+.service{
+    background: #e7ecef;
+    padding-left: 50px;
+    display: flex;
+    justify-content:space-between;
+    color:#e7ecef;
+    font-size: small;
+    align-items: center;  
+    flex-wrap: wrap;
+}
+
+.service h3{
+    background-color: #6096ba;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    box-shadow: 0 0 5px 0  #274c77;
+    margin-top: 5%;
+ 
+}
+.service h3:hover{
+    cursor: pointer;
+    color: #274c77;
+   text-decoration: ;
+}
+
+/* Styling the Newsletter section*/
+
+.newsletter h2{
+    background: #8b8c89;
+    padding: 20px;
+    display: flex;
+    height: 10vh;
+    color:#e7ecef;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.newsletter :hover{
+text-decoration: underline;
+cursor: pointer;
+color: #274c77;
+background-color: #6096ba;
+    
+}
+
+.newsletter p{
+    background: #8b8c89;
+    padding: 20px;
+    display: flex;
+    height: 50vh;
+    color:#e7ecef;
+    font-size: small;
+    align-items: center;   
+}
+
+
+/* Styling the footer section*/
+
+footer{
+    background:#274c77;
+    min-height: 50vh;
+}
+
+.locations{
+    color:#e7ecef; 
+    background-color: #274c77;
+    padding: 20px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+.locations p{
+   background: #274c77;
+    font-size: 15px;
+    color: #e7ecef;
+}
+
+.locations h3{
+ text-align: center;
+ margin-bottom: 0%;
+   
+}
+
+.headquarter{
+    padding: 20px;
+    width: 60%;
+    text-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    margin: 30px 50px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0  #141515
+}
+
+.headquarter:hover{
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0  #c1c8c8;
+    transition: .3s;
+}
+
+.city .office{
+    max-width: 70%;
+    border-radius:10px ;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    margin: 30px 10px 5px 50px;
+    box-shadow: 0 0 10px 0  #141515; 
+}
+
+.city .office:hover{
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #c1c8c8;
+    transition: .3s;
+}
+
+
+/* Styling the Social media in the footer section*/
+
+.network{
+    margin-top: 5%;
+    margin-right:5%;
+    padding: 5px;
+    min-height: 30vh;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0  #141515;
+    transition: .3s;
+}
+
+
+
+.network h3{
+    text-align: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+
+.network:hover{
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0  #c1c8c8;
+    transition: .3s;
+}
+
+.network button{
+    max-width: 30%;
+    min-width: 100px;
+    height: 30px;
+    background: #cbd1d6;
+    color: #274c77;
+    cursor: pointer; 
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0  #f6f8f8;
+    transition: .3s;
+    
+}
+
+.network button:hover{
+    background: #274c77;
+    color: #e7ecef;
+    transition: .3s;
+}
+.group-button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+
+footer{
+   min-height:50vh ;
+   max-width: 100%;
+}
+
+@media screen and (min-width:900px){ 
+   .locations{flex-direction:row;} 
+}
+
+/* END OF PROJECT PRESENTATION, THANKS FOR LISTENING!!*/
